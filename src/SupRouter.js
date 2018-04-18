@@ -12,7 +12,7 @@ let SupRouter = () => (
 
             <Route exact path="/" component={HomeScreen} />
             <Route exact path="/users" component={AllUsersScreen} />
-            <Route  path="/users/:id" component={ProfileScreen} />
+            <Route  path="/users/:username/" component={ProfileScreen}/>
         </div>
     </Router>
 );

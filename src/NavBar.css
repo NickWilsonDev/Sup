@@ -1,7 +1,12 @@
 .navbar-container {
+    border: black solid 1px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.navbar-container:hover {
+    background: #a7c3f2;
 }
 
 .navbar-item {

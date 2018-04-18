@@ -1,5 +1,10 @@
+.sup-container {
+    width: 30%;
+    text-align: center;
+}
 
-.sup-container :hover {
+.sup-container:hover {
+    width: 30%;
     border: solid 1px;
     background-color: #c5d9f9;
 }

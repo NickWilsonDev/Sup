@@ -20,14 +20,21 @@ class SupListComponent extends Component {
     }
 
     componentDidMount() {
-        this.setState({supList: suplist});
+        //this.setState({supList: suplist});
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(results => {
+                return results.json();
+            }).then(data => {
+                this.setState({supList: data});
+            });
+
     }
 
     render() {
         
         return this.state.supList.map((data) => {
             return (
-                <SupComponent key={data.id} username={data.username} title={data.title} content={data.content} />
+                <SupComponent key={data.id} username={data.username} title={data.title} content={data.body} />
             )
         });
     }
